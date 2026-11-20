@@ -1,0 +1,141 @@
+{
+  "github_username": "aaliinae",
+  "gpu_uuid": "GPU-7e5def2f-f0b2-0a47-bab2-dee79208e6d4",
+  "cpu_signature": "x86_64::2::Intel(R) Xeon(R) CPU @ 2.00GHz",
+  "cpu_cache_line_bytes": 64,
+  "shared_window_alignment_bytes": 64,
+  "shared_window_slots": 64,
+  "gpu": "NVIDIA Tesla T4",
+  "compute_capability": "7.5",
+  "mpi_ranks": 4,
+  "cartesian_grid": [
+    2,
+    2
+  ],
+  "local_shape_with_halo": [
+    258,
+    258
+  ],
+  "steps": 300,
+  "dt": 1e-06,
+  "dx": 0.001949317738791423,
+  "kappa_max": 0.23999962497115201,
+  "dt_stability_limit": 3.9581724838358046e-06,
+  "shm_stride_benchmark": {
+    "1": {
+      "seconds": 3.5221241010000313,
+      "milliseconds": 3522.1241010000313,
+      "iterations_per_rank": 40000000,
+      "values": [
+        40000000,
+        40000000,
+        40000000,
+        40000000
+      ]
+    },
+    "8": {
+      "seconds": 7.70549999629111e-05,
+      "milliseconds": 0.0770549999629111,
+      "iterations_per_rank": 40000000,
+      "values": [
+        40000000,
+        40000000,
+        40000000,
+        40000000
+      ]
+    },
+    "16": {
+      "seconds": 8.296200002178011e-05,
+      "milliseconds": 0.08296200002178011,
+      "iterations_per_rank": 40000000,
+      "values": [
+        40000000,
+        40000000,
+        40000000,
+        40000000
+      ]
+    },
+    "false_sharing_slowdown_stride1_vs_stride8": 45709.22201927631,
+    "padding_128B_vs_64B_ratio_stride16_over_stride8": 1.0766595297088084,
+    "llvm_audit": {
+      "load_instructions": 17,
+      "store_instructions": 3,
+      "has_load_and_store": true
+    }
+  },
+  "llvm_audit_passed": true,
+  "serialized_ms_rank0": 6532.660324999995,
+  "overlapped_ms_rank0": 1434.8135870000078,
+  "parity_max_diff": 0.0,
+  "ptx_audit": {
+    "st_shared_f64": 4,
+    "ld_shared_f64": 10,
+    "bar_sync": 1,
+    "st_shared_f64_exact": 4,
+    "ld_shared_f64_exact": 10
+  },
+  "ptx_audit_passed": true,
+  "serialized_energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.04693080730113765,
+      "l2": 0.14818097061897073
+    },
+    {
+      "step": 100,
+      "energy": 0.04692179420114696,
+      "l2": 0.14765033170624622
+    },
+    {
+      "step": 200,
+      "energy": 0.04691588235652841,
+      "l2": 0.1471267231501783
+    },
+    {
+      "step": 300,
+      "energy": 0.046910700266507364,
+      "l2": 0.14660989336741725
+    }
+  ],
+  "overlapped_energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.04693080730113765,
+      "l2": 0.14818097061897073
+    },
+    {
+      "step": 100,
+      "energy": 0.04692179420114696,
+      "l2": 0.14765033170624622
+    },
+    {
+      "step": 200,
+      "energy": 0.04691588235652841,
+      "l2": 0.1471267231501783
+    },
+    {
+      "step": 300,
+      "energy": 0.046910700266507364,
+      "l2": 0.14660989336741725
+    }
+  ],
+  "pulse_centers": [
+    [
+      0.630754165763195,
+      0.21765362343864236
+    ],
+    [
+      0.7648617516429548,
+      0.16779987320583084
+    ],
+    [
+      0.8351874542671767,
+      0.7578238939823214
+    ]
+  ],
+  "pulse_amplitudes": [
+    0.6908990424717087,
+    0.9477068800140355,
+    0.8329673677664644
+  ]
+}
